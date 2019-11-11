@@ -9,8 +9,8 @@ namespace MedAnalysis.DataAccess.Core
 
         Task<PatientDto> GetPatientAsync(int patientId);
 
-        Task<AnalysisResultDto> UpsertAnalysisAsync(AnalysisResultDto analysis);
+        Task<AnalysisResultDto> InsertAnalysisAsync(AnalysisResultDto analysis);
 
-        Task<PatientDto> UpsertPatientAsync(PatientDto patient);
+        Task<PatientDto> InsertPatientAsync(PatientDto patient);
     }
 }

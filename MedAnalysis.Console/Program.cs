@@ -113,7 +113,7 @@ namespace MedAnalysis.Console
             };
 
             var service = Kernel.Get<IAnalysisService>();
-            service.UpsertPatientAsync(newPatient).Wait();
+            service.InsertPatientAsync(newPatient).Wait();
 
             System.Console.WriteLine("Успешно добавлено.");
         }
@@ -136,7 +136,7 @@ namespace MedAnalysis.Console
             };
 
             var service = Kernel.Get<IAnalysisService>();
-            service.UpsertAnalysisAsync(newAnalysis).Wait();
+            service.InsertAnalysisAsync(newAnalysis).Wait();
 
             System.Console.WriteLine("Успешно добавлено.");
         }

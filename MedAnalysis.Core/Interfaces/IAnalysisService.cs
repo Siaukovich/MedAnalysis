@@ -10,8 +10,8 @@ namespace MedAnalysis.Core.Interfaces
 
         Task<IEnumerable<Patient>> GetPatientsAsync();
 
-        Task<AnalysisResult> UpsertAnalysisAsync(AnalysisResult analysis);
+        Task<AnalysisResult> InsertAnalysisAsync(AnalysisResult analysis);
 
-        Task<Patient> UpsertPatientAsync(Patient patient);
+        Task<Patient> InsertPatientAsync(Patient patient);
     }
 }

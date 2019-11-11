@@ -19,12 +19,12 @@ namespace MedAnalysis.DataAccess.File
             throw new NotImplementedException();
         }
 
-        public async Task<AnalysisResultDto> UpsertAnalysisAsync(AnalysisResultDto analysis)
+        public async Task<AnalysisResultDto> InsertAnalysisAsync(AnalysisResultDto analysis)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<PatientDto> UpsertPatientAsync(PatientDto patient)
+        public async Task<PatientDto> InsertPatientAsync(PatientDto patient)
         {
             throw new NotImplementedException();
         }

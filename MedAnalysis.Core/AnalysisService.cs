@@ -36,7 +36,7 @@ namespace MedAnalysis.Core
             return Mapper.Map<IEnumerable<Patient>>(patients);
         }
 
-        public async Task<AnalysisResult> UpsertAnalysisAsync(AnalysisResult analysis)
+        public async Task<AnalysisResult> InsertAnalysisAsync(AnalysisResult analysis)
         {
             var patient = await _repository.GetPatientAsync(analysis.PatientId);
 
@@ -44,15 +44,15 @@ namespace MedAnalysis.Core
 
             analysisDto.Patient = patient;
 
-            var result = await _repository.UpsertAnalysisAsync(analysisDto);
+            var result = await _repository.InsertAnalysisAsync(analysisDto);
 
             return Mapper.Map<AnalysisResult>(result);
         }
 
-        public async Task<Patient> UpsertPatientAsync(Patient patient)
+        public async Task<Patient> InsertPatientAsync(Patient patient)
         {
             var patientDto = Mapper.Map<PatientDto>(patient);
-            var result = await _repository.UpsertPatientAsync(patientDto);
+            var result = await _repository.InsertPatientAsync(patientDto);
 
             return Mapper.Map<Patient>(result);
         }

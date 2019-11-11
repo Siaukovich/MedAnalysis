@@ -29,7 +29,7 @@ namespace MedAnalysis.DataAccess.EF
             return patients.Single();
         }
 
-        public async Task<AnalysisResultDto> UpsertAnalysisAsync(AnalysisResultDto analysis)
+        public async Task<AnalysisResultDto> InsertAnalysisAsync(AnalysisResultDto analysis)
         {
             _context.Analysis.AddOrUpdate(analysis);
 
@@ -38,7 +38,7 @@ namespace MedAnalysis.DataAccess.EF
             return analysis;
         }
 
-        public async Task<PatientDto> UpsertPatientAsync(PatientDto patient)
+        public async Task<PatientDto> InsertPatientAsync(PatientDto patient)
         {
             _context.Patients.AddOrUpdate(patient);
 
