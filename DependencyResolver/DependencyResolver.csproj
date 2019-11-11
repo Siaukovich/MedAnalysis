@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MedAnalysis.Core\MedAnalysis.Core.csproj" />
+    <ProjectReference Include="..\MedAnalysis.DataAccess.Core\MedAnalysis.DataAccess.Core.csproj" />
+    <ProjectReference Include="..\MedAnalysis.DataAccess.EF\MedAnalysis.DataAccess.EF.csproj" />
+    <ProjectReference Include="..\MedAnalysis.DataAccess.File\MedAnalysis.DataAccess.File.csproj" />
+  </ItemGroup>
+
+</Project>
