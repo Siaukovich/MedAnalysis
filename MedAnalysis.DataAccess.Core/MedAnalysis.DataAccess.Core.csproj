@@ -4,4 +4,8 @@
     <TargetFramework>net472</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MvcScaffolding" Version="1.0.9" />
+  </ItemGroup>
+
 </Project>

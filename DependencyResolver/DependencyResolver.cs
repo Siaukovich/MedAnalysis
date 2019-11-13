@@ -9,7 +9,7 @@ namespace DependencyResolver
 {
     public static class DependencyResolver
     {
-        public static void Resolve(this IKernel kernel, bool useDatabaseAsStorage = true)
+        public static void ResolveKernel(this IKernel kernel, bool useDatabaseAsStorage = true)
         {
             kernel.Bind<IAnalysisService>().To<AnalysisService>().InSingletonScope();
 

@@ -36,6 +36,13 @@ namespace MedAnalysis.Core
             return Mapper.Map<IEnumerable<Patient>>(patients);
         }
 
+        public async Task<Patient> GetPatientAsync(int patientId)
+        {
+            var patient = await _repository.GetPatientAsync(patientId);
+
+            return Mapper.Map<Patient>(patient);
+        }
+
         public async Task<AnalysisResult> InsertAnalysisAsync(AnalysisResult analysis)
         {
             var patient = await _repository.GetPatientAsync(analysis.PatientId);

@@ -15,7 +15,7 @@ namespace MedAnalysis.Console
         static Program()
         {
             Kernel = new StandardKernel();
-            Kernel.Resolve();
+            Kernel.ResolveKernel();
 
             System.Console.OutputEncoding = Encoding.GetEncoding("Cyrillic");
             System.Console.InputEncoding  = Encoding.GetEncoding("Cyrillic");

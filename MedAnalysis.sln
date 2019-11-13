@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DependencyResolver", "Depen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedAnalysis.DataAccess.File", "MedAnalysis.DataAccess.File\MedAnalysis.DataAccess.File.csproj", "{6D2C325C-8D2C-4097-9182-26B7D07E0B28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedAnalysis.Web", "MedAnalysis.Web\MedAnalysis.Web.csproj", "{3BF2A630-AF27-41D0-955C-5E283DC5821E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{6D2C325C-8D2C-4097-9182-26B7D07E0B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D2C325C-8D2C-4097-9182-26B7D07E0B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D2C325C-8D2C-4097-9182-26B7D07E0B28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BF2A630-AF27-41D0-955C-5E283DC5821E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BF2A630-AF27-41D0-955C-5E283DC5821E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BF2A630-AF27-41D0-955C-5E283DC5821E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BF2A630-AF27-41D0-955C-5E283DC5821E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{E0C73394-2450-49DA-96C0-4459D83DEEE3} = {7C35C3F8-7494-40A4-8540-D853C9BB7B9B}
 		{F4E830E3-94A3-473B-86CE-C8CB304EFBA7} = {7C35C3F8-7494-40A4-8540-D853C9BB7B9B}
 		{6D2C325C-8D2C-4097-9182-26B7D07E0B28} = {27151DE3-5634-4B9B-8A77-324CED7C487C}
+		{3BF2A630-AF27-41D0-955C-5E283DC5821E} = {7C35C3F8-7494-40A4-8540-D853C9BB7B9B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F004B5E0-2F9D-48E6-8178-2582E0DE8BBF}
