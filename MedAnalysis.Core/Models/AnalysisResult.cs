@@ -10,7 +10,7 @@ namespace MedAnalysis.Core.Models
 
         public string Result { get; set; }
 
-        public DateTime TakenAt { get; set; }
+        public DateTime? TakenAt { get; set; }
 
         public int PatientId { get; set; }
     }

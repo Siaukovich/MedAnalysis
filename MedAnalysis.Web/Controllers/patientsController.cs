@@ -7,6 +7,7 @@ using MedAnalysis.Core.Models;
 
 namespace MedAnalysis.Web.Controllers
 {
+    //[Authorize]
     public class PatientsController : Controller
     {
         private readonly IAnalysisService _service;
@@ -64,7 +65,7 @@ namespace MedAnalysis.Web.Controllers
         
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> CreateAnalysis([Bind(Include = "Id,Name,Result,TakenAt")] AnalysisResult analysisResult)
+        public async Task<ActionResult> CreateAnalysis([Bind(Include = "Id,Name,Result,TakenAt,PatientId")] AnalysisResult analysisResult)
         {
             if (ModelState.IsValid)
             {
@@ -75,7 +76,7 @@ namespace MedAnalysis.Web.Controllers
             return View(analysisResult);
         }
 
-        // GET: patients/CreateAnalysis/5
+        // GET: patients/CreateAnalysis?patientId=5
         public ActionResult CreateAnalysis(int? patientId)
         {
             if (patientId == null)

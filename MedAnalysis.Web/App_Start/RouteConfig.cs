@@ -18,12 +18,6 @@ namespace MedAnalysis.Web
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Patients", action = "Index", id = UrlParameter.Optional }
             );
-
-            routes.MapRoute(
-                name: "CreateAnalysis",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Patients", action = "CreateAnalysis", id = UrlParameter.Optional }
-            );
         }
     }
 }

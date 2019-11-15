@@ -62,14 +62,14 @@
                 @Html.DisplayFor(modelItem => item.Result)
             </td>
             <td>
-                @Html.DisplayName(item.TakenAt.ToString("dd/MM/yyyy"))
+                @Html.DisplayName(item.TakenAt?.ToString("dd/MM/yyyy") ?? string.Empty)
             </td>
         </tr>
     }
 </table>
 
 <p>
-    @Html.ActionLink("Создать новый анализ", "CreateAnalysis", new { id=Model.Id })
+    @Html.ActionLink("Создать новый анализ", "CreateAnalysis", new { patientId=Model.Id })
 </p>
 
 <p>
